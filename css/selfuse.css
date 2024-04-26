@@ -1,0 +1,29 @@
+/* fonts settings */
+@font-face {
+    font-family: 'CascadiaCode-SemiLightItalic';
+    font-display: swap;
+    src: url('font/CascadiaCode-SemiLightItalic.ttf');
+}
+h1#site-title {
+    font-family:CascadiaCode-SemiLightItalic!important
+}
+span#subtitle  {
+    font-family:CascadiaCode-SemiLightItalic!important
+}
+a#site-name  {
+    font-family:CascadiaCode-SemiLightItalic!important
+}
+
+# Mouse Click Settings
+/*鼠标设置，外部interface 设置*/
+body{
+cursor:url(https://cdn.custom-cursor.com/db/7248/32/starter-3d-effect-cursor-cursor.png) , default!important;
+}
+/*内部 interface 设置*/
+a,img,button{
+cursor:url(https://cdn.custom-cursor.com/db/7247/32/starter-3d-effect-cursor-pointer.png) , pointer!important;
+}
+
+
+# IPV6-Supported
+<a href="https://ipw.cn/ipv6webcheck/?site=xn--vqqw85omda.top:5244/" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src=
