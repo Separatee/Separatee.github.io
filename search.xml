@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>解析几何---定比分点</title>
+      <link href="/posts/fc73.html"/>
+      <url>/posts/fc73.html</url>
+      
+        <content type="html"><![CDATA[<p>定比分点<br>author: LuoGin &amp; Separate &amp; Ting<br>abbrlink: fc73<br>date: 2024-06-03 00:16:22</p><h2 id="tags-mathjax-true"><a href="#tags-mathjax-true" class="headerlink" title="tags: mathjax: true"></a>tags: mathjax: true</h2><p>定比分点<br>author: LuoGin &amp; Separate &amp; Ting<br>abbrlink: fc73<br>date: 2024-06-03 00:16:22<br>mathjax: true</p><h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>介绍定比点差法之前，先介绍一些解析几何中的基础知识：</p><h1 id="一、定比分点"><a href="#一、定比分点" class="headerlink" title="一、定比分点"></a>一、定比分点</h1><p>若 <script type="math/tex">\overrightarrow {AM}=\lambda \overrightarrow {MB}</script>，则称 <strong>点M为点A、B的 <script type="math/tex">\lambda</script> 定比分点</strong>．</p><p>当 <script type="math/tex">\lambda >0</script> 时，点M在线段AB上，称为内分点；</p><p>当 <script type="math/tex">\lambda <0（\lambda \ne -1）</script> 时，点M在线段AB的延长线上，称为外分点．</p><p>定比分点坐标公式：$$ \text{若点}A(x_1,y_1)，B(x_2,y_2)，\overrightarrow {AM}=\lambda \overrightarrow {MB}， \text{则点M的坐标为}<br>M\left(\dfrac {x_1+\lambda x_2}{1+\lambda },\dfrac {y_1+\lambda y_2}{1+\lambda }\right ).</p><h2 id="二、点差法"><a href="#二、点差法" class="headerlink" title="二、点差法"></a>二、点差法</h2><script type="math/tex; mode=display">若点A(x_1,y_1),B(x_2,y_2)在有心二次曲线\dfrac {x^2}{a^2}\pm\dfrac {y^2}{b^2}=1 \tezt{上，则有}\dfrac {x_1^2}{a^2}\pm\dfrac {y_1^2}{b^2}=1,\dfrac {x_2^2}{a^2}\pm\dfrac {y_2^2}{b^2}=1,</script><p>两式作差得</p><script type="math/tex; mode=display">\dfrac {(x_1+x_2)(x_1-x_2)}{a^2}\pm \dfrac {(y_1+y_2)(y_1-y_2)}{b^2}=0.</script><blockquote><p>此即有心二次曲线的垂径定理，可以解决与弦的中点相关的问题．</p></blockquote><hr><p>下面介绍定比点差法：</p><p>若点A(x_1,y_1),B(x_2,y_2)在有心二次曲线\dfrac {x^2}{a^2}\pm\dfrac {y^2}{b^2}=1上，则有<br>\begin{split} \dfrac {x_1^2}{a^2}\pm\dfrac {y_1^2}{b^2}=1,\dfrac {\lambda ^2x_2^2}{a^2}\pm\dfrac {\lambda ^2y_2^2}{b^2}=\lambda ^2,\end{split}<br>两式作差得<br>\dfrac {(x_1+\lambda x_2)(x_1-\lambda x_2)}{a^2}\pm \dfrac {(y_1+\lambda y_2)(y_1-\lambda y_2)}{b^2}=1-\lambda ^2.<br>这样就得到了<br>\dfrac {1}{a^2}\cdot\dfrac {x_1+\lambda x_2}{1+\lambda }\cdot\dfrac {x_1-\lambda x_2}{1-\lambda }\pm\dfrac {1}{b^2}\cdot\dfrac {y_1+\lambda y_2}{1+\lambda }\cdot\dfrac {y_1-\lambda y_2}{1-\lambda }=1.<br>例1　过异于原点的点P(x_0,y_0)引椭圆\dfrac {x^2}{a^2}+\dfrac {y^2}{b^2}=1(a&gt;b&gt;0)的割线PAB，其中点A,B在椭圆上，点M是割线PAB上异于P的一点，且满足\dfrac {AM}{MB}=\dfrac {AP}{PB}．求证：点M在直线\dfrac {x_0x}{a^2}+\dfrac {y_0y}{b^2}=1上．</p><p>证明　直接运用定比点差法即可．</p><p>设\overrightarrow {AP}=\lambda \overrightarrow {PB}，则有\overrightarrow {AM}=-\lambda \overrightarrow {MB}，设A(x_1,y_1),B(x_2,y_2),M(x_M,y_M)，则有<br>\begin{split} x_0=\dfrac {x_1+\lambda x_2}{1+\lambda },y_0=\dfrac {y_1+\lambda y_2}{1+\lambda }.\\x_M=\dfrac {x_1-\lambda x_2}{1-\lambda },y_M=\dfrac {y_1-\lambda y_2}{1-\lambda }.\end{split}<br>又因为点A,B在椭圆上，所以有<br>\begin{split} \dfrac {x_1^2}{a^2}+\dfrac {y_1^2}{b^2}=1,\dfrac {\lambda ^2x_2^2}{a^2}+\dfrac {\lambda ^2y_2^2}{b^2}=\lambda ^2,\end{split}<br>两式作差得<br>\dfrac {(x_1+\lambda x_2)(x_1-\lambda x_2)}{a^2}+\dfrac {(y_1+\lambda y_2)(y_1-\lambda y_2)}{b^2}=1-\lambda ^2.<br>两边同除以1-\lambda ^2，即可得到<br>\dfrac {x_0x_M}{a^2}+\dfrac {y_0y_M}{b^2}=1.</p><p>\text{命题得证.}</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AI语音合成技术：技术实现与发展趋势探析</title>
       <link href="/posts/789f.html"/>
       <url>/posts/789f.html</url>
