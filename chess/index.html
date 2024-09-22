@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Gomoku Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+        <!--jQuery-->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!--Bootstrap JS-->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <div class="container">
+        <!--对话框视图-->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">历史记录</h4>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <ul class="list-group" id="history-list">
+                        </ul>
+                    </div>
+                    <div class="modal-footer" id="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <canvas id="game" class="center-block"></canvas> <!--五子棋视图-->
+                <canvas id="menu" class="center-block"></canvas> <!--菜单视图-->
+            </div>
+        </div>
+    </div>
+    </body>
+    
+
+    <!--下列JS文件对应的Typescript源码均位于src/目录下-->
+    <script src="out/Shapes/Shape.js"></script>
+    <script src="out/Shapes/Circle.js"></script>
+    <script src="out/Shapes/Rectangle.js"></script>
+    <script src="out/Shapes/Line.js"></script>
+    <script src="out/Shapes/ChessboardShape.js"></script>
+    <script src="out/Shapes/ChessShape.js"></script>
+    <script src="out/Shapes/TextShape.js"></script>
+    <script src="out/Shapes/TwoHalfCircle.js"></script>
+    <script src="out/Shapes/TextCircle.js"></script>
+    <script src="out/Themes/Theme.js"></script>
+    <script src="out/Themes/DefaultTheme.js"></script>
+    <script src="out/Themes/VividTheme.js"></script>
+    <script src="out/Views/CanvasView.js"></script>
+    <script src="out/Views/GomokuView.js"></script>
+    <script src="out/Views/MenuView.js"></script>
+    <script src="out/Views/DialogView.js"></script>
+    <script src="out/Models/Player.js"></script>
+    <script src="out/Models/Chess.js"></script>
+    <script src="out/Models/Chessboard.js"></script>
+    <script src="out/Models/GomokuDB.js"></script>
+    <script src="out/AIs/GomokuAI.js"></script>
+    <script src="out/AIs/AIScore.js"></script>
+    <script src="out/AIs/Matrix.js"></script>
+    <!--<script src="out/AIs/TestAI_1.js"></script> -->
+    <script src="out/AIs/TestAI_2.js"></script>
+    <script src="out/GomokuGame.js"></script>
+    <script src="out/GomokuViewController.js"></script>
+    <script type="text/javascript">
+        new GomokuViewController(true);
+    </script>
+</html>
